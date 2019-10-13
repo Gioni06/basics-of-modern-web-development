@@ -1,6 +1,9 @@
 @media print {
   html {
     font-size: 50%;
+    --background: #fff;
+    --text: #000;
+    --blend-mode: multiply;
   }
   main {
     display: block;

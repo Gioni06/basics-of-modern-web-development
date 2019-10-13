@@ -1,11 +1,30 @@
 html {
   font-size: 62.5%;
   line-height: 1.4375;
-  --background: #f9bebd;
-  --highlight: #ffff00;
-  --text: #383434;
+  --background: #f3f1ed;
+  --highlight: #fff0a6;
+  --text: #333333;
   --blend-mode: multiply;
+
+  /*
+      --background: #2d2d2d;
+    --highlight: #353535;
+    --text: #f0f0f0;
+    --blend-mode: normal;
+  */
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    font-size: 62.5%;
+    line-height: 1.4375;  
+    --background: #2d2d2d;
+    --highlight: #353535;
+    --text: #f0f0f0;
+    --blend-mode: normal;
+  }
+}
+
 
 ::selection {
   background: var(--highlight);
@@ -63,6 +82,12 @@ body > aside {
 #logo > h1 {
   margin: 0;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  #logo {
+    font-size: 1.5rem;
+  }
 }
 
 h2,
@@ -125,6 +150,20 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 4rem;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    display: block;
+  }
 }
 
 aside > div {
