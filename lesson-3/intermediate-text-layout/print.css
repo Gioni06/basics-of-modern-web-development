@@ -1,0 +1,24 @@
+@media print {
+  html {
+    font-size: 50%;
+  }
+  main {
+    display: block;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  aside {
+    display: none;
+  }
+
+  article {
+    page-break-after: always;
+  }
+}
+
+@page {
+  margin: 3cm;
+}
