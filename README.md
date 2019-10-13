@@ -17,3 +17,4 @@ This is a collection of coding session for the course "Basics of modern web deve
 ## Table of contents
 - [Course Notes](/course-notes)
 - [Lesson 2](/lesson-2)
+- [Lesson 3](/lesson-3)
