@@ -1,9 +1,9 @@
 html {
   font-size: 62.5%;
   line-height: 1.4375;
-  --background: #f3f1ed;
-  --highlight: #fff0a6;
-  --text: #333333;
+  --background: #F1F3F4;
+  --highlight: #feff83;
+  --text: #4A4D51;
   --blend-mode: multiply;
 }
 
@@ -11,9 +11,10 @@ html {
   html {
     font-size: 62.5%;
     line-height: 1.4375;  
-    --background: #2d2d2d;
-    --highlight: #353535;
-    --text: #f0f0f0;
+    --background: #292C2F;
+    --highlight: #202124;
+    --text: #F0F2F3;
+    --blend-mode: normal
     --blend-mode: normal;
   }
 }
