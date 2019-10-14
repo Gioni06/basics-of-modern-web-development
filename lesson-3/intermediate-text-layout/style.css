@@ -5,13 +5,6 @@ html {
   --highlight: #fff0a6;
   --text: #333333;
   --blend-mode: multiply;
-
-  /*
-      --background: #2d2d2d;
-    --highlight: #353535;
-    --text: #f0f0f0;
-    --blend-mode: normal;
-  */
 }
 
 @media (prefers-color-scheme: dark) {
