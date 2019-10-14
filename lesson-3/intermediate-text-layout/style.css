@@ -1,23 +1,28 @@
 html {
   font-size: 62.5%;
   line-height: 1.4375;
-  --background: #F1F3F4;
+  --background: #f1f3f4;
   --highlight: #feff83;
-  --text: #4A4D51;
-  --aside: rgba(255,255,255);
+  --text: #2f3133;
+  --aside: rgba(255, 255, 255);
   --blend-mode: multiply;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     font-size: 62.5%;
-    line-height: 1.4375;  
-    --background: #292C2F;
+    line-height: 1.4375;
+    --background: #292c2f;
     --highlight: #202124;
-    --text: #F0F2F3;
+    --text: #f0f2f3;
     --aside: #202124;
     --blend-mode: normal;
   }
+}
+
+/* This a special selector to style highlighted(selected) text */
+::-moz-selection {
+  background: var(--highlight);
 }
 
 ::selection {
@@ -40,7 +45,7 @@ body > aside {
 }
 
 #main-header {
-  border-bottom: 2px solid var(--text);
+  border-bottom: 4px double var(--text);
   margin-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
@@ -154,10 +159,40 @@ main {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   main {
     display: block;
   }
+}
+
+article > header > div {
+  margin-top: 2.125rem;
+}
+
+article > header > div > span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  margin: 2.3rem 0;
+}
+
+article > header > div > span:not(:last-child)::after {
+  content: " | ";
+}
+
+article > p > span.location {
+  font-weight: bold;
+  font-style: normal;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+article > p > span.location::after {
+  content: ' - ';
 }
 
 aside > div {
