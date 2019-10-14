@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Model</title>
+</head>
+<style>
+    main {
+        /* ignore me */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main>div {
+        /* ignore me */
+        background-color: #888888;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2em;
+        font-family: monospace;
+        color: white;
+
+        /* CSS Box Model */
+        /* Dimensions */
+        width: 200px;
+        height: 200px;
+        /* space inside */
+        padding: 20px;
+        /* borders outside */
+        border: 40px solid #f9aa3c;
+        /* space outside */
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <main>
+        <div>
+            CSS Box Model
+        </div>
+        <div>
+            CSS Box Model
+        </div>
+    </main>
+</body>
+
+</html>
