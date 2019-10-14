@@ -4,7 +4,7 @@ html {
   --background: #F1F3F4;
   --highlight: #feff83;
   --text: #4A4D51;
-  --aside: #ffffff;
+  --aside: rgba(255,255,255);
   --blend-mode: multiply;
 }
 
@@ -16,11 +16,9 @@ html {
     --highlight: #202124;
     --text: #F0F2F3;
     --aside: #202124;
-    --blend-mode: normal
     --blend-mode: normal;
   }
 }
-
 
 ::selection {
   background: var(--highlight);
