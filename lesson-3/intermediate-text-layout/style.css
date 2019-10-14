@@ -4,6 +4,7 @@ html {
   --background: #F1F3F4;
   --highlight: #feff83;
   --text: #4A4D51;
+  --aside: #ffffff;
   --blend-mode: multiply;
 }
 
@@ -14,6 +15,7 @@ html {
     --background: #292C2F;
     --highlight: #202124;
     --text: #F0F2F3;
+    --aside: #202124;
     --blend-mode: normal
     --blend-mode: normal;
   }
@@ -163,11 +165,7 @@ main {
 aside > div {
   margin-top: 4rem;
   padding: 2rem;
-  background: linear-gradient(
-    -135deg,
-    transparent 3rem,
-    rgba(0, 0, 0, 0.05) 3rem
-  );
+  background-color: var(--aside);
 }
 aside > div > header > h3 {
   margin-top: 38.18px;
