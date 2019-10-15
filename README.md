@@ -1,4 +1,4 @@
-# Basics of modern web development
+# Fundamentals of modern web development
 
 This is a collection of coding session for the course "Basics of modern web development" at [HSD](https://www.hs-duesseldorf.de).
 
