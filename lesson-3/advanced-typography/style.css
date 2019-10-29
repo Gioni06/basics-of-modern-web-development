@@ -1,3 +1,5 @@
+/* Variables
+ * ========================================================================== */
 html {
   font-size: 62.5%;
   line-height: 1.4375;
@@ -141,7 +143,6 @@ header > span {
   font-weight: normal;
   line-height: 2rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
   margin: 2.3rem 0;
 }
 
@@ -175,7 +176,6 @@ article > header > div > span {
   font-size: 1rem;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
   margin: 2.3rem 0;
 }
 
