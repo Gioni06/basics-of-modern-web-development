@@ -1,0 +1,50 @@
+html {
+    --background: rgba(241, 243, 244, 1);
+    --sidebar-background: #e7eaeb;
+    --text: #18191a;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'EB Garamond', serif;
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#header {
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 20px;
+}
+
+#logo-subheadline {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.07rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+#line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--text);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5rem;
+}
