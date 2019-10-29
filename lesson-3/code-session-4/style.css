@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 100%; /* fit image into parent element */
 }
 
 #logo {
