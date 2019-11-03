@@ -14,7 +14,14 @@ body {
     background-color: white;
     line-height     : 1.4;
     color           : #2b3130;
+    background      : #e6e5e5;
     font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: white;
+    }
 }
 
 
@@ -24,21 +31,31 @@ body {
 }
 
 section {
-    border: 1px solid #e6e5e5;
-    padding: 40px;
+    background   : white;
+    padding      : 10px;
     border-radius: 4px;
+
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        border       : 1px solid #e6e5e5;
+        padding      : 40px;
+        border-radius: 4px;
+    }
 }
 
 section:not(:last-child) {
     margin-bottom: 20px;
 }
 
-section > header {
+section>header {
     border-bottom: 1px solid #e6e5e5;
-    margin: 0 0 40px 0;
+    margin       : 0 0 40px 0;
 }
-section > header > h2 {
-    margin: 0;
+
+section>header>h2 {
+    margin : 0;
     padding: 0;
 }
 
@@ -63,11 +80,11 @@ section > header > h2 {
 */
 
 .logo {
-    display: block;
-    margin: 0;
-    width: 272px;
-    height: auto;
-    overflow: hidden;
+    display        : block;
+    margin         : 0;
+    width          : 272px;
+    height         : auto;
+    overflow       : hidden;
     text-decoration: none;
 }
 
@@ -80,11 +97,11 @@ section > header > h2 {
 */
 
 .navigation ul {
-    display: flex;
-    flex-direction: row;
+    display        : flex;
+    flex-direction : row;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin         : 0;
+    padding        : 0;
 }
 
 .navigation ul li:not(:last-child) {
@@ -93,8 +110,8 @@ section > header > h2 {
 
 .navigation ul li a {
     text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
+    color          : #333;
+    padding        : 5px 10px;
 }
 
 .navigation ul li a:first-child {
@@ -105,31 +122,31 @@ section > header > h2 {
     color: #a81326;
 }
 
-p > .special {
+p>.special {
     color: #a81326;
 }
 
-p > em {
+p>em {
     font-style: normal;
-    color: #a81326;
+    color     : #a81326;
 }
 
-p > mark {
+p>mark {
     background-color: #d1e8e6;
-    padding: .1em .2em;
+    padding         : .1em .2em;
 }
 
 html {
-    --primary-color: #d1e8e6;
+    --primary-color  : #d1e8e6;
     --secondary-color: #a81326;
-    --text-color: #fff;
-    --space: 28px;
+    --text-color     : #fff;
+    --space          : 28px;
 }
 
 .box:not(:last-child) {
-    padding: var(--space);
-    white-space: nowrap;
-    color: var(--text-color);
+    padding      : var(--space);
+    white-space  : nowrap;
+    color        : var(--text-color);
     margin-bottom: calc(var(--space) / 2);
 }
 
@@ -143,48 +160,48 @@ html {
 
 .custom-font {
     font-family: 'Pacifico', cursive;
-    font-size: 40px;
-    color: var(--secondary-color);
+    font-size  : 40px;
+    color      : var(--secondary-color);
 }
 
 .grid {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'header header header'
         'sidebar content content'
         'footer footer footer';
     column-gap: 20px;
 }
 
-.grid > .header {
-    grid-area: header;
-    height: 50px;
+.grid>.header {
+    grid-area : header;
+    height    : 50px;
     background: #e6e5e5;
-    padding: 10px;
+    padding   : 10px;
 }
 
-.grid > .sidebar {
+.grid>.sidebar {
     grid-area: sidebar;
 }
 
-.grid > .content {
+.grid>.content {
     grid-area: content;
 }
 
-.grid > .footer {
-    grid-area: footer;
-    height: 50px;
+.grid>.footer {
+    grid-area : footer;
+    height    : 50px;
     background: #e6e5e5;
-    padding: 10px;
+    padding   : 10px;
 }
 
 .col-3-grid {
-    display: grid;
+    display              : grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
+    column-gap           : 20px;
 }
 
 .col {
-    padding: 20px;
+    padding         : 20px;
     background-color: #e6e5e5;
 }
