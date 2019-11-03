@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Common Techniques</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center">Common HTML & CSS Techniques</h1>
+        </header>
+        
+        <div class="wrapper">
+            <aside>
+
+            </aside>
+            <main>
+                    <section>
+                            <header>
+                                <h2>Clickable Logo</h2>
+                                <p>Create a link with an image inside. Often times used for logos.</p>
+                            </header>
+                            <a href="#" title="visit breuninger.com" class="logo">
+                                <img src="./img/breuninger.svg" alt="breuninger logo">
+                            </a>
+                            <br><br>
+                            <script src="https://gist.github.com/Gioni06/f461d8d271628a07fee6a24855dbfe3d.js"></script>
+                            <script src="https://gist.github.com/Gioni06/cf16a681f014a1e783259e2e3917406d.js"></script>
+                        </section>
+                        
+                        <section>
+                            <header>
+                                <h2>Navigation Menu</h2>
+                                <p>Create a navigation menu from an unordered list of links</p>
+                            </header>
+                            <nav class="navigation">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Project</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <br><br>
+                            <script src="https://gist.github.com/Gioni06/1c01bd297dbf0e28e3e278cc4fd529c6.js"></script>
+                            <script src="https://gist.github.com/Gioni06/73ee07d5a0de4ecd06b86498d3bb33af.js"></script>
+                        </section>
+                
+                        <section>
+                            <header>
+                                <h2>Style text inside a paragraph</h2>
+                                <p>Style specific parts inside a paragraph tag</p>
+                            </header>
+                            <p>Has consul audire docendi ad, an <span class="special">vivendum maluisset</span> est. Prima illum
+                                <em>repudiare</em> ad mea, sale <mark>sententiae</mark> usu at.</p>
+                            <br><br>
+                            <script src="https://gist.github.com/Gioni06/6953185c9e6c23e9b204264f148e4a31.js"></script>
+                            <script src="https://gist.github.com/Gioni06/dc24e7965b63dc51d10559638f9b1100.js"></script>
+                        </section>
+                
+                        <section>
+                            <header>
+                                <h2>Using CSS Variables</h2>
+                                <p>Declare and use a custom css variable.</p>
+                            </header>
+                            <div class="box primary"><code>this is --primary-color</code></div>
+                            <div class="box secondary"><code>this is --secondary-color</code></div>
+                            <div class="box primary"><code>this is --primary-color</code></div>
+                            <br><br>
+                            <script src="https://gist.github.com/Gioni06/16a3eef857e7e261251e2eed36f22156.js"></script>
+                            <script src="https://gist.github.com/Gioni06/e0b08395d30abf1d0cac631f8f14e2a5.js"></script>
+                        </section>
+                        
+                        <section>
+                            <header>
+                                <h2>Using Google Fonts</h2>
+                                <p>Choose and embed a Google Font</p>
+                            </header>
+                            <img style="width: 100%;" src="./img/google-fonts-screenshot.png" alt="Screenshot of Google Fonts">
+                            <h1 class="custom-font">
+                                The spectacle before us was indeed sublime.
+                            </h1>
+                            <br><br>
+                            <script src="https://gist.github.com/Gioni06/a1ba78d2b91b94dc0505f8323de7affe.js"></script>
+                            <script src="https://gist.github.com/Gioni06/ceddea5881eaebe49c0d548d4b31866f.js"></script>
+                        </section>
+                        
+                        <section>
+                            <header>
+                                <h2>CSS Grid</h2>
+                                <p>Create and use a CSS Grid layout with <code>grid-template-areas</code></p>
+                            </header>
+                            <div class="grid">
+                                <div class="header">Header</div>
+                                <div class="sidebar">
+                                    <h4>Sidebar</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Sidebar-Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sidebar-Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sidebar-Item</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <h4>Content Area</h4>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                                </div>
+                                <div class="footer">Footer</div>
+                            </div>
+                            <br><br>
+                            <script src="https://gist.github.com/Gioni06/e07602707f9c7ffc2e991ca33d67d13d.js"></script>
+                            <script src="https://gist.github.com/Gioni06/8cc27a40f34d694cd3a44710955181bc.js"></script>
+                            <br><br>
+                            <p>Create and use a CSS Grid layout with <code>grid-template-columns</code></p>
+                            <div class="col-3-grid">
+                                <div class="col">
+                                    Column
+                                </div>
+                                <div class="col">
+                                    Column
+                                </div>
+                                <div class="col">
+                                    Column
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <script src="https://gist.github.com/Gioni06/c497edd8f3e1b2f5250bc7e731660a8b.js"></script>
+                            <script src="https://gist.github.com/Gioni06/f13ac191158aafd82f30bc23c019daa4.js"></script>
+                        </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
