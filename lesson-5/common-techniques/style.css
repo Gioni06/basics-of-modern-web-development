@@ -42,6 +42,18 @@ section > header > h2 {
     padding: 0;
 }
 
+.title-link {
+    text-decoration: none;
+}
+
+.title {
+    color: #2b3130;
+}
+
+.title:hover {
+    color: #a81326;
+}
+
 .text-center {
     text-align: center;
 }
