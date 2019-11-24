@@ -1,0 +1,44 @@
+/* :root is the same as html for websites.*/
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Roboto Condensed', sans-serif;
+    --button-font: 'Roboto', sans-serif;
+
+    --color-main: #12121B;
+    --color-primary: #FCEE60;
+    --color-secondary: #F2F2F2;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-main);
+    font-family: var(--heading-font);
+    font-weight: 900;
+}
+
+.button {
+    text-decoration: none;
+    font-family: var(--button-font);
+}
+
+.primary {
+    background-color: var(--color-primary);
+    color: var(--color-main);
+}
+
+.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-main);
+}
