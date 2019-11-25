@@ -86,7 +86,7 @@ header {
 }
 
 header .logo {
-    font-size: 3.3rem;
+    font-size: 2.4rem;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -106,7 +106,7 @@ header .logo > h2 {
 }
 
 .mission-statement h1 {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
     margin: 2rem 0 1rem 0;
     text-align: center;
 }
