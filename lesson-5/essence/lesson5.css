@@ -1,0 +1,117 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    column-gap: 5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5rem;
+}
+.logo {
+    display: block;
+    margin: 5%;
+    width: 272px;
+    height: auto;
+    overflow: hidden;
+    text-decoration: none;
+}
+.logo img {
+    width: 100%;
+}
+.headline {
+    font-family: 'Cambo', serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Tell the element to use 100% of its available height.
+    *  now "align-items: center" does what you intended.
+    */
+    height: 100%;
+    padding: 0rem;
+    margin: 5%;
+    font-size: 150%;
+    width: 80%;
+  }
+h2{
+    color: white;
+    padding: 0rem;
+}
+.ul-white{
+    color: white;
+    list-style-type: none;
+    padding: 0rem;
+    margin-bottom: 0rem;
+}
+/* Target every <li> element, that is a direct decendent of anything,
+*  that has a class ".ul-white".
+*  E.x.:
+*  <ul class="ul-white">
+*    <li> Yeah, I have a margin :) </li>
+*    <li>
+*        <ol>
+*            <li> I don't have a margin :( </li>
+*        </ol>
+*    </li>
+*  </ul> 
+* 
+*/
+.ul-white > li {
+    margin: 0 0 .5em;
+}
+/* You can not have multiple <li> elements inside a <span> elemnent.
+*  Also you basically want to change the color of some <li> elements, 
+*  not the list around the gray items. Let's just use a call called ".text-gray"
+*  and add this class to every <li> element that sould be gray.
+*/
+.text-grey{
+    color: grey;
+}
+/* Let's introduce a footer element, that holds the footer list and the copyright.
+*
+*/
+footer {
+    margin: 0 auto; 
+    width: 85%; /* The combination of a width and "margin: 0 auto" horizontally centers the content */
+    /* Learn more about flexbox
+    *  https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+    *  
+    *  This is a litte tutorial to practice flexbox.
+    *  https://flexboxfroggy.com/#de
+    */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ul-bottom{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-bottom > li {
+    padding: 0 1em;
+    margin: .5em 0;
+}
+/* this pseudo selector :first-child lets you style the first element of a list
+*/
+.ul-bottom > li:first-child {
+    padding-left: 0;
+}
+
+#copyright{
+    color: white;
+    text-align: right;
+    padding: 0rem;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+body {background-color: #131415;}
+/* The color of the <hr> element can be changed by using this "hack",
+*  It's ugly and nobody likes it, but thats how it is :)
+*/
+hr {
+    border: 1px solid gray;
+    width: 85%;
+}
