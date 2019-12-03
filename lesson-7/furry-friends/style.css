@@ -1,25 +1,34 @@
 /* :root is the same as html for websites.*/
 :root {
     --heading-font: 'Playfair Display', serif;
-    --text-font: 'Roboto Condensed', sans-serif;
-    --button-font: 'Roboto', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+    --button-font: 'Roboto Condensed', sans-serif;
 
     --color-main: #12121B;
     --color-primary: #FCEE60;
+    --color-primary-dark: rgb(238, 225, 79);
     --color-secondary: #F2F2F2;
+    --color-secondary-dark: rgb(211, 211, 211);
 }
 
 html {
     font-size: 62.5%;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 a {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     text-decoration: none;
 }
 
-p {
+p, li {
     font-size: 1.6em;
+    font-family: var(--text-font);
+    line-height: calc(1.6rem * 1.6);
 }
 
 h1, h2, h3, h4 {
@@ -28,17 +37,122 @@ h1, h2, h3, h4 {
     font-weight: 900;
 }
 
+img {
+    width: 100%;
+}
+
 .button {
     text-decoration: none;
     font-family: var(--button-font);
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 40px;
 }
 
 .primary {
     background-color: var(--color-primary);
     color: var(--color-main);
+    padding: 1.5rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
+
+.primary:hover {
+    background-color: var(--color-primary-dark);
+}  
 
 .secondary {
     background-color: var(--color-secondary);
     color: var(--color-main);
+}
+
+.secondary:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+.wrapper {
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+}
+
+header .logo {
+    font-size: 2.4rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+header .logo > h2 {
+    margin: 1rem 0 2rem 0;
+}
+
+.mission-statement {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.mission-statement h1 {
+    font-size: 2.1rem;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.mission-statement p {
+    font-weight: 200;
+    text-align: center;
+}
+
+.mission-statement .button {
+    display: inline-flex;
+    flex-direction: column;
+    width: calc(100% / 3 * 2);
+    align-self: center;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+footer {
+    margin: 2rem 0 0 0;
+    padding: 3rem 1.6rem;
+    background-color: var(--color-secondary);
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer nav ul > li {
+    display: flex;
+    margin: .2rem 0;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer nav ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .8rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-weight: 200;
 }
